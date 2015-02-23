@@ -17,7 +17,10 @@ typedef NS_ENUM(NSInteger, DrawingOrder) {
 
 @interface GamePlayScene : CCNode <CCPhysicsCollisionDelegate>
 {
+    //The '*' declares two different variables in the class scope, which means they can be accessed anywhere in the GamePlayScene class.
     // define variables here;
+    Character* character; //Stores an instance of our Flappy Bird
+    CCPhysicsNode* physicsNode; //References a Node that simulates physics
 }
 
 -(void) initialize;
