@@ -13,6 +13,7 @@
     //CCB files are created by SpriteBuilder and describe the properties and appearence of in-game objects
     [physicsNode addChild:character];
     //Will add our character as a child of physicsNode so that physics will be applied to it
+    [self addObstacle];
 }
 
 -(void)update:(CCTime)delta
@@ -26,7 +27,7 @@
 {
     //This will get called every time the player touches the screen
     [character flap];
-    [self addObstacle];
+    
 }
 
 @end
